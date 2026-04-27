@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// 1. Define a structure
+struct Student {
+    int id;
+    char name[50];
+    float marks;
+};
+
+int main() {
+    // 2. Declare a structure variable
+    struct Student s1;
+
+    // Assign values to structure members
+    s1.id = 101;
+    sprintf(s1.name, "Komi");
+    s1.marks = 95.5;
+
+    // 3. Access and display structure members
+    printf("Student ID: %d\n", s1.id);
+    printf("Student Name: %s\n", s1.name);
+    printf("Student Marks: %.2f\n", s1.marks);
+
+    return 0;
+}
+
